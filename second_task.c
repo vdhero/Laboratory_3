@@ -6,9 +6,19 @@ The next two are 28 and 496. Print out if the number entered by the user is a pe
 Hint: Sum of divisors implies applying summation: a loop, and summing in the accumulator. In our case not all numbers in the loop qualify for being a divisor. */
 
 #include <stdio.h>
-
-int main(){
-
-
+int n;
+int main()
+{
+printf("Enter number:");
+scanf("%d",&n);
+if (n<=0) 
+return 0;
+  for (int i = 1; i < n; ++i) 
+  {     
+      
+      if (n % i == 0) 
+    {printf("%d",i);}
+  }
+return 0;
 
 }
