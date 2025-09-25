@@ -10,11 +10,17 @@ Write a program to compute it with the first 20 terms! Note that the factorial c
 
 Hint: if you have used nested loops, try to simplify your solution! A single loop is enough to solve the problem.*/
 
-#include<stdio.h>
-
+#include <stdio.h>
+double e=1;
+double n=1;
 int main()
 {
 
-
-
-}
+  for (int i = 1; i <=20; i++) 
+  { 
+      n=n*i;
+      e=e+(1/n);
+      
+  }
+  printf("%lf",e);
+return 0;
