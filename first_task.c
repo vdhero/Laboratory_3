@@ -13,9 +13,10 @@ End of repetition
 Print the pruduct.*/
 
 #include<stdio.h>
-
+int x=1;
 int main(){
-
-
-
+for (int i=1; i<11;i+1)
+ {x=x*i;};
+printf("%d",x);
+return 0;
 }
